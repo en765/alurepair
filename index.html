@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FelgePro | Početna</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">FelgePro</h1>
+      <nav class="space-x-4">
+        <a href="#onama" class="hover:text-blue-500">O nama</a>
+        <a href="#kontakt" class="hover:text-blue-500">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Gumbi za usluge -->
+  <main class="flex-grow">
+    <section class="py-16 text-center">
+      <h2 class="text-3xl font-bold mb-10">Odaberite uslugu</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-md mx-auto">
+
+        <a href="plastificiranje.html" class="bg-blue-600 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-blue-700 transition">Plastificiranje</a>
+
+        <a href="popravak.html" class="bg-green-600 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-green-700 transition">Popravak</a>
+
+        <a href="cnc.html" class="bg-yellow-600 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-yellow-700 transition">CNC obrada</a>
+
+        <a href="vulkanizacija.html" class="bg-red-600 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-red-700 transition">Vulkanizacija</a>
+
+      </div>
+    </section>
+
+    <!-- O nama sekcija -->
+    <section id="onama" class="bg-white py-16 px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <h3 class="text-2xl font-semibold mb-4">O nama</h3>
+        <p class="text-gray-700 leading-relaxed">
+          FelgePro je specijalizirana radionica za restauraciju i personalizaciju felgi. Naš tim ima dugogodišnje iskustvo u popravku, CNC obradi i plastificiranju aluminijskih felgi. Pružamo uslugu vulkanizacije s najmodernijom opremom. Naš cilj je vrhunska kvaliteta i zadovoljstvo klijenata.
+        </p>
+      </div>
+    </section>
+
+    <!-- Kontakt forma -->
+    <section id="kontakt" class="py-16 px-4 bg-gray-50">
+      <div class="max-w-md mx-auto">
+        <h3 class="text-2xl font-semibold text-center mb-6">Kontaktirajte nas</h3>
+        <form action="https://formsubmit.co/elena.nesek@gmail.com" method="POST" class="space-y-4">
+          <input type="hidden" name="_captcha" value="false">
+
+          <input type="hidden" name="_subject" value="Nova poruka sa stranice">
+        
+          <input type="text" name="ime" placeholder="Vaše ime" class="w-full border rounded px-4 py-2" required>
+          <input type="email" name="email" placeholder="Vaš email" class="w-full border rounded px-4 py-2" required>
+          <input type="tel" name="telefon" placeholder="Broj mobitela" class="w-full border rounded px-4 py-2" required>
+          <textarea name="poruka" rows="4" placeholder="Vaša poruka" class="w-full border rounded px-4 py-2" required></textarea>
+          
+          <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Pošaljite</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 text-sm bg-white">
+    &copy; 2025 FelgePro - Sva prava pridržana.
+  </footer>
+
+</body>
+</html>
