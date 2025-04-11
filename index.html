@@ -6,10 +6,10 @@
   <title>FelgePro | Početna</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+<body class="bg-blue-100 text-gray-800 flex flex-col min-h-screen">
 
   <!-- Header -->
-  <header class="bg-white shadow-md">
+  <header class="bg-blue-900 shadow-md text-white">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
       <h1 class="text-xl font-bold">FelgePro</h1>
       <nav class="space-x-4">
@@ -21,23 +21,52 @@
 
   <!-- Gumbi za usluge -->
   <main class="flex-grow">
-    <section class="py-16 text-center">
-      <h2 class="text-3xl font-bold mb-10">Odaberite uslugu</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-md mx-auto">
+    <section class="py-16 text-center bg-cover bg-center bg-no-repeat" style="background-image: url('images/pozadina.jpg');">
+      <h2 class="text-3xl font-bold text-white mb-10 drop-shadow-lg">Odaberite uslugu</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 max-w-4xl mx-auto">
+    
+        <a href="#plastificiranje" class="bg-gray-800 bg-opacity-80 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-opacity-100 transition">Plastificiranje</a>
+    
+        <a href="#popravak" class="bg-gray-800 bg-opacity-80 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-opacity-100 transition">Popravak</a>
+    
+        <a href="#cnc" class="bg-gray-800 bg-opacity-80 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-opacity-100 transition">CNC obrada</a>
+    
+        <a href="#vulkanizacija" class="bg-gray-800 bg-opacity-80 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-opacity-100 transition">Vulkanizacija</a>
+    
+      </div>
+    </section>
 
-        <a href="plastificiranje.html" class="bg-blue-600 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-blue-700 transition">Plastificiranje</a>
+    <!-- Sekcije usluga -->
+    <section id="plastificiranje" class="bg-slate-700 text-white py-12 px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <h3 class="text-2xl font-semibold mb-4">Plastificiranje</h3>
+        <p>Opis usluge plastificiranja felgi. Ovdje možete navesti detalje o postupku, bojama itd.</p>
+      </div>
+    </section>
 
-        <a href="popravak.html" class="bg-green-600 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-green-700 transition">Popravak</a>
+    <section id="popravak" class="bg-slate-600 text-white py-12 px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <h3 class="text-2xl font-semibold mb-4">Popravak</h3>
+        <p>Opis usluge popravka felgi. Moguće vrste oštećenja koje popravljate itd.</p>
+      </div>
+    </section>
 
-        <a href="cnc.html" class="bg-yellow-600 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-yellow-700 transition">CNC obrada</a>
+    <section id="cnc" class="bg-slate-500 text-white py-12 px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <h3 class="text-2xl font-semibold mb-4">CNC obrada</h3>
+        <p>Opis CNC obrade – preciznost, mogućnosti dorade, vrste dizajna itd.</p>
+      </div>
+    </section>
 
-        <a href="vulkanizacija.html" class="bg-red-600 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-red-700 transition">Vulkanizacija</a>
-
+    <section id="vulkanizacija" class="bg-slate-400 text-white py-12 px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <h3 class="text-2xl font-semibold mb-4">Vulkanizacija</h3>
+        <p>Opis vulkanizacije, zamjene guma, balansiranja i ostalih usluga.</p>
       </div>
     </section>
 
     <!-- O nama sekcija -->
-    <section id="onama" class="bg-white py-16 px-4">
+    <section id="onama" class="bg-gray-100 py-16 px-4">
       <div class="max-w-3xl mx-auto text-center">
         <h3 class="text-2xl font-semibold mb-4">O nama</h3>
         <p class="text-gray-700 leading-relaxed">
@@ -47,19 +76,18 @@
     </section>
 
     <!-- Kontakt forma -->
-    <section id="kontakt" class="py-16 px-4 bg-gray-50">
+    <section id="kontakt" class="py-16 px-4 bg-gray-100">
       <div class="max-w-md mx-auto">
         <h3 class="text-2xl font-semibold text-center mb-6">Kontaktirajte nas</h3>
         <form action="https://formsubmit.co/elena.nesek@gmail.com" method="POST" class="space-y-4">
           <input type="hidden" name="_captcha" value="false">
-
           <input type="hidden" name="_subject" value="Nova poruka sa stranice">
-        
+
           <input type="text" name="ime" placeholder="Vaše ime" class="w-full border rounded px-4 py-2" required>
           <input type="email" name="email" placeholder="Vaš email" class="w-full border rounded px-4 py-2" required>
           <input type="tel" name="telefon" placeholder="Broj mobitela" class="w-full border rounded px-4 py-2" required>
           <textarea name="poruka" rows="4" placeholder="Vaša poruka" class="w-full border rounded px-4 py-2" required></textarea>
-          
+
           <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Pošaljite</button>
         </form>
       </div>
@@ -67,8 +95,17 @@
   </main>
 
   <!-- Footer -->
-  <footer class="text-center py-4 text-sm bg-white">
+  <footer class="text-center py-4 bg-gray-100 text-sm bg-white">
     &copy; 2025 FelgePro - Sva prava pridržana.
+        <!-- Ikonica poziva -->
+    <a href="tel:+385912345678" class="flex items-center gap-2 text-blue-600 hover:text-blue-800">
+      📞 Nazovite nas
+    </a>
+
+    <!-- Ikonica WhatsAppa -->
+    <a href="https://wa.me/385912345678" class="flex items-center gap-2 text-green-600 hover:text-green-800" target="_blank">
+      💬 WhatsApp
+    </a>
   </footer>
 
 </body>
