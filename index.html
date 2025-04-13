@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FelgePro | Početna</title>
+  <title>AluRepair | Početna</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-blue-100 text-gray-800 flex flex-col min-h-screen">
@@ -11,7 +11,7 @@
   <!-- Header -->
   <header class="bg-blue-900 shadow-md text-white">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold">FelgePro</h1>
+      <h1 class="text-3xl font-bold">AluRepair</h1>
       <nav class="space-x-4">
         <a href="#onama" class="hover:text-blue-500">O nama</a>
         <a href="#kontakt" class="hover:text-blue-500">Kontakt</a>
@@ -23,13 +23,15 @@
   <main class="flex-grow">
     <section class="py-16 text-center bg-cover bg-center bg-no-repeat" style="background-image: url('images/pozadina.jpg');">
       <h2 class="text-3xl font-bold text-white mb-10 drop-shadow-lg">Odaberite uslugu</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 max-w-4xl mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-5 gap-4 max-w-6xl mx-auto">
     
         <a href="#plastificiranje" class="bg-gray-800 bg-opacity-80 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-opacity-100 transition">Plastificiranje</a>
+
+        <a href="#pjeskarenje" class="bg-gray-800 bg-opacity-80 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-opacity-100 transition">Pjeskarenje i kemijsko skidanje boje</a>
     
-        <a href="#popravak" class="bg-gray-800 bg-opacity-80 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-opacity-100 transition">Popravak</a>
+        <a href="#popravak" class="bg-gray-800 bg-opacity-80 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-opacity-100 transition">Popravak felgi (ravnanje i zavarivanje)</a>
     
-        <a href="#cnc" class="bg-gray-800 bg-opacity-80 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-opacity-100 transition">CNC obrada</a>
+        <a href="#cnc" class="bg-gray-800 bg-opacity-80 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-opacity-100 transition">CNC obrada felgi (diamond cut)</a>
     
         <a href="#vulkanizacija" class="bg-gray-800 bg-opacity-80 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-opacity-100 transition">Vulkanizacija</a>
     
@@ -38,45 +40,116 @@
 
     <!-- Sekcije usluga -->
     <section id="plastificiranje" class="bg-slate-700 text-white py-12 px-4">
-      <div class="max-w-3xl mx-auto text-center">
-        <h3 class="text-2xl font-semibold mb-4">Plastificiranje</h3>
-        <p>Opis usluge plastificiranja felgi. Ovdje možete navesti detalje o postupku, bojama itd.</p>
+      <div class="max-w-3xl pl-8 text-left">
+        <h3 class="text-4xl font-semibold mb-4">Plastificiranje</h3>
+        <p class="leading-relaxed">Plastificiranje felgi je proces elektrostatskog nanošenja 
+          praha koji se potom termički stvrdnjava u peći, čime se dobiva čvrst, 
+          postojan i estetski atraktivan sloj. Ova metoda nudi vrhunsku zaštitu od korozije, 
+          mehaničkih oštećenja i utjecaja vremenskih uvjeta. Felge se prije plastificiranja 
+          temeljito pripremaju pjeskarenjem i kemijskim čišćenjem kako bi se uklonile sve nečistoće i 
+          stara boja. Uz felge, plastificirati se mogu i drugi dijelovi automobila poput nosača, šasija, 
+          nosača motora i raznih metalnih komponenti. Ipak, felge ostaju najčešći izbor zbog stalne izloženosti 
+          cestovnim uvjetima i vizualne važnosti. Kvalitetno plastificirane felge ne samo da izgledaju kao nove, već i traju znatno duže od klasično lakiranih.</p>
+      </div>
+    </section>
+
+    <section id="pjeskarenje" class="bg-slate-500 text-white py-12 px-4">
+      <div class="max-w-3xl ml-auto text-left pr-8">
+        <h3 class="text-4xl font-semibold mb-4">Pjeskarenje i kemijsko skidanje boje</h3>
+        <p class="leading-relaxed">Prvi korak u pripremi felgi i drugih metalnih dijelova automobila je kemijsko 
+          skidanje boje u posebnoj kadi, gdje se uz pomoć snažnih sredstava uklanjaju svi slojevi 
+          stare boje i nečistoća. Ovaj postupak omogućuje dublje čišćenje i bolju pripremu površine za daljnju obradu.
+          Nakon toga slijedi pjeskarenje finim pijeskom od aluminijevog oksida niske granulacije, kojim se površina dodatno 
+          očisti, izravna i matira bez oštećenja metala. Ova kombinacija metoda posebno je učinkovita kod felgi, koje zahtijevaju 
+          visoku preciznost i temeljitu obradu. Osim felgi, isti se proces koristi i za ostale metalne dijelove automobila.</p>
       </div>
     </section>
 
     <section id="popravak" class="bg-slate-600 text-white py-12 px-4">
-      <div class="max-w-3xl mx-auto text-center">
-        <h3 class="text-2xl font-semibold mb-4">Popravak</h3>
-        <p>Opis usluge popravka felgi. Moguće vrste oštećenja koje popravljate itd.</p>
+      <div class="max-w-3xl pl-8 text-left">
+        <h3 class="text-4xl font-semibold mb-6">Popravak felgi</h3>
+    
+        <!-- Ravnanje felgi -->
+        <div class="mb-8">
+          <h4 class="text-xl font-semibold mb-2">Ravnanje felgi</h4>
+          <p class="leading-relaxed">
+            Ravnanje felgi se provodi u slučajevima kada su felge iskrivljene zbog udaraca u rupe, rubnjake ili druge nepravilnosti na cesti. 
+            Proces se vrši pomoću specijaliziranih hidrauličnih alata koji precizno vraćaju felgu u njenu originalnu geometriju. 
+            Time se osigurava pravilno prianjanje gume, sigurnost vožnje i sprječava dodatno trošenje ovjesa i guma.
+          </p>
+        </div>
+    
+        <!-- Zavarivanje felgi -->
+        <div>
+          <h4 class="text-xl font-semibold mb-2">Zavarivanje felgi</h4>
+          <p class="leading-relaxed">
+            Zavarivanje felgi se koristi kada dođe do napuknuća ili lomova, najčešće na unutarnjoj strani felge. 
+            Korištenjem postupka TIG zavarivanja aluminijskih legura, oštećeni dijelovi se precizno obnavljaju. 
+            Nakon zavarivanja, felga se dodatno obrađuje i ravna po potrebi kako bi se postigla maksimalna sigurnost i funkcionalnost.
+          </p>
+        </div>
+    
       </div>
     </section>
 
     <section id="cnc" class="bg-slate-500 text-white py-12 px-4">
-      <div class="max-w-3xl mx-auto text-center">
-        <h3 class="text-2xl font-semibold mb-4">CNC obrada</h3>
-        <p>Opis CNC obrade – preciznost, mogućnosti dorade, vrste dizajna itd.</p>
+      <div class="max-w-3xl ml-auto text-left pr-8">
+        <h3 class="text-4xl font-semibold mb-4">CNC obrada felgi (diamond cut)</h3>
+        <p>CNC obrada felgi, poznata i kao diamond cut, predstavlja visoko precizan proces 
+          strojne obrade kojim se postižu izuzetno glatke i reflektirajuće površine na licu felge. 
+          Ova tehnika uključuje korištenje računalno upravljanog stroja (CNC tokarskog stroja) koji struže tanki 
+          sloj aluminija s površine felge, otkrivajući sjajan metalni finiš. Prije same obrade, felga se detaljno priprema, 
+          čisti i ravna kako bi rezultat bio savršeno ravnomjeran. Nakon tokarenja, felga se dodatno premazuje zaštitnim slojem 
+          prozirnog laka kako bi se spriječila oksidacija i produžila trajnost. Diamond cut obrada je posebno popularna kod modernih 
+          vozila zbog elegantnog i sportskog izgleda koji pruža.</p>
       </div>
     </section>
 
     <section id="vulkanizacija" class="bg-slate-400 text-white py-12 px-4">
-      <div class="max-w-3xl mx-auto text-center">
-        <h3 class="text-2xl font-semibold mb-4">Vulkanizacija</h3>
-        <p>Opis vulkanizacije, zamjene guma, balansiranja i ostalih usluga.</p>
+      <div class="max-w-3xl pl-8 text-left">
+        <h3 class="text-4xl font-semibold mb-4">Vulkanizacija</h3>
+        <p>Uz usluge popravka i obrade felgi, našim klijentima nudimo i 
+          mogućnost vulkanizacije, čime štedite vrijeme i 
+          pojednostavljujete cijeli proces. Ako dolazite kod nas na ravnanje, zavarivanje, plastifikaciju ili 
+          CNC obradu felgi, možete odmah obaviti i montažu, demontažu te balansiranje guma. 
+          Također, nudimo opciju da vaše vozilo ostavite kod nas dok su felge na obradi, čime vam omogućujemo 
+          dodatnu praktičnost i bezbrižnost.</p>
       </div>
     </section>
 
     <!-- O nama sekcija -->
     <section id="onama" class="bg-gray-100 py-16 px-4">
       <div class="max-w-3xl mx-auto text-center">
-        <h3 class="text-2xl font-semibold mb-4">O nama</h3>
-        <p class="text-gray-700 leading-relaxed">
-          FelgePro je specijalizirana radionica za restauraciju i personalizaciju felgi. Naš tim ima dugogodišnje iskustvo u popravku, CNC obradi i plastificiranju aluminijskih felgi. Pružamo uslugu vulkanizacije s najmodernijom opremom. Naš cilj je vrhunska kvaliteta i zadovoljstvo klijenata.
+        <h3 class="text-3xl font-semibold mb-4">O nama</h3>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          AluRepair je specijalizirana radionica za obradu aluminijskih felgi. 
+          Uz to, omogućujemo i uslugu vulkanizacije kako bi cijeli proces bio brz, praktičan i obavljen na jednom mjestu.
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          Tijekom obrade felgi, nudimo opciju da vaše vozilo ostavite kod nas, gdje će biti smješteno do završetka obrade. 
+          Također, dostupna je usluga preuzimanja i povrata felgi na vašoj adresi (Zagreb i okolica), 
+          kao i mogućnost slanja felgi putem naše dostavne službe uz nadoplatu. U tom slučaju potrebno je felge
+          zapakirati u zasebne kutije, koje će se nakon obrade koristiti za njihov povrat.
+        </p> 
+        <p class="text-gray-700 leading-relaxed mb-6">
+          Standardni rok obrade četiri felge iznosi 3 do 7 radnih dana, ovisno o vrsti i opsegu zahvata. 
+          Ako vam je potrebna brža usluga, nudimo i prioritetnu obradu uz nadoplatu, kojom se postupak završava u roku od najviše 2 radna dana.
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          Sve cijene naših usluga dostupne su na upit, jer ovise o vrsti i stanju felgi te opsegu potrebnih radova. 
+          Za bržu procjenu, slobodno nam pošaljite fotografije felgi putem 
+          <a href="https://wa.me/385981921561" target="_blank" class="text-green-600 hover:text-green-800 underline">WhatsAppa</a> 
+          ili 
+          <a href="mailto:elena.nesek@gmail.com" class="text-red-600 hover:text-red-800 underline">e-maila</a>
+          , a za dodatne informacije možete nas i direktno nazvati na broj 
+          <a href="tel:+385981921561" class="text-blue-600 hover:text-blue-800 underline">+385 98 192 1561</a>. 
+          Rado ćemo odgovoriti na sva vaša pitanja i predložiti najbolje rješenje za vaše potrebe.
         </p>
       </div>
     </section>
 
     <!-- Kontakt forma -->
-    <section id="kontakt" class="py-16 px-4 bg-gray-100">
+    <section id="kontakt" class="py-16 px-4 bg-gray-100"> 
       <div class="max-w-md mx-auto">
         <h3 class="text-2xl font-semibold text-center mb-6">Kontaktirajte nas</h3>
         <form action="https://formsubmit.co/elena.nesek@gmail.com" method="POST" class="space-y-4">
