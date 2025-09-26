@@ -9,15 +9,36 @@
 <body class="bg-blue-100 text-gray-800 flex flex-col min-h-screen">
 
   <!-- Header -->
-  <header class="bg-blue-900 shadow-md text-white sticky top-0 z-50">
-    <div class="container mx-auto px-4 sm:py-2 md:py-4 flex justify-between items-center">
-      <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">AluRepair</h1>
-      <nav class="space-x-4">
-        <a href="#onama" class="hover:text-blue-500">O nama</a>
-        <a href="#kontakt" class="hover:text-blue-500">Kontakt</a>
-      </nav>
+<header class="bg-blue-900 shadow-md text-white sticky top-0 z-50">
+  <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <!-- Lijevo: logo -->
+    <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">AluRepair</h1>
+
+    <!-- Desno: O nama, Kontakt, Hamburger -->
+    <div class="flex items-center gap-4 text-sm sm:text-base md:text-lg">
+      <a href="#onama" class="hover:text-blue-400">O nama</a>
+      <a href="#kontakt" class="hover:text-blue-400">Kontakt</a>
+
+      <!-- Hamburger - uvijek vidljiv -->
+      <button id="menu-btn" class="block focus:outline-none">
+        <svg class="w-6 h-6 fill-none stroke-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
     </div>
-  </header>
+  </div>
+
+  <!-- Mobilni + desktop meni za usluge -->
+  <div id="mobile-menu" class="hidden px-4 pb-4 sm:px-8 sm:pb-6">
+    <nav class="flex flex-col sm:flex-row sm:justify-center sm:space-x-6 text-white text-base space-y-2 sm:space-y-0">
+      <a href="#plastificiranje" class="hover:text-blue-300">Plastificiranje</a>
+      <a href="#pjeskarenje" class="hover:text-blue-300">Pjeskarenje</a>
+      <a href="#popravak" class="hover:text-blue-300">Popravak</a>
+      <a href="#cnc" class="hover:text-blue-300">CNC</a>
+      <a href="#vulkanizacija" class="hover:text-blue-300">Vulkanizacija</a>
+    </nav>
+  </div>
+</header>
 
   <!-- Gumbi za usluge -->
   <main class="flex-grow">
@@ -181,5 +202,32 @@
     </a>
   </footer>
 
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    // Toggle meni klikom na gumb
+    menuBtn.addEventListener('click', (e) => {
+      e.stopPropagation(); // da klik ne prođe dalje
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Zatvori meni ako klikneš izvan njega
+    document.addEventListener('click', (e) => {
+      const isClickInsideMenu = mobileMenu.contains(e.target);
+      const isClickOnButton = menuBtn.contains(e.target);
+
+      if (!isClickInsideMenu && !isClickOnButton) {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+
+    // Zatvori meni kad klikneš na bilo koji link unutar njega
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
 </body>
 </html>
