@@ -9,9 +9,9 @@
 <body class="bg-blue-100 text-gray-800 flex flex-col min-h-screen">
 
   <!-- Header -->
-  <header class="bg-blue-900 shadow-md text-white">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-3xl font-bold">AluRepair</h1>
+  <header class="bg-blue-900 shadow-md text-white sticky top-0 z-50">
+    <div class="container mx-auto px-4 sm:py-2 md:py-4 flex justify-between items-center">
+      <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">AluRepair</h1>
       <nav class="space-x-4">
         <a href="#onama" class="hover:text-blue-500">O nama</a>
         <a href="#kontakt" class="hover:text-blue-500">Kontakt</a>
@@ -22,7 +22,7 @@
   <!-- Gumbi za usluge -->
   <main class="flex-grow">
     <section class="py-16 text-center bg-cover bg-center bg-no-repeat" style="background-image: url('images/pozadina.jpg');">
-      <h2 class="text-3xl font-bold text-white mb-10 drop-shadow-lg">Odaberite uslugu</h2>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-10 drop-shadow-lg">
       <div class="grid grid-cols-1 sm:grid-cols-5 gap-4 max-w-6xl mx-auto">
     
         <a href="#plastificiranje" class="bg-gray-800 bg-opacity-80 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-opacity-100 transition">Plastificiranje</a>
@@ -39,9 +39,9 @@
     </section>
 
     <!-- Sekcije usluga -->
-    <section id="plastificiranje" class="bg-slate-700 text-white py-12 px-4">
+    <section id="plastificiranje" class="bg-slate-700 text-white py-12 px-4 sm:px-6 md:px-10 lg:px-16">
       <div class="max-w-3xl pl-8 text-left">
-        <h3 class="text-4xl font-semibold mb-4">Plastificiranje</h3>
+        <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">Plastificiranje</h3>
         <p class="leading-relaxed">Plastificiranje felgi je proces elektrostatskog nanošenja 
           praha koji se potom termički stvrdnjava u peći, čime se dobiva čvrst, 
           postojan i estetski atraktivan sloj. Ova metoda nudi vrhunsku zaštitu od korozije, 
@@ -53,9 +53,9 @@
       </div>
     </section>
 
-    <section id="pjeskarenje" class="bg-slate-500 text-white py-12 px-4">
+    <section id="pjeskarenje" class="bg-slate-500 text-white py-12 px-4 sm:px-6 md:px-10 lg:px-16">
       <div class="max-w-3xl ml-auto text-left pr-8">
-        <h3 class="text-4xl font-semibold mb-4">Pjeskarenje i kemijsko skidanje boje</h3>
+        <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">Pjeskarenje i kemijsko skidanje boje</h3>
         <p class="leading-relaxed">Prvi korak u pripremi felgi i drugih metalnih dijelova automobila je kemijsko 
           skidanje boje u posebnoj kadi, gdje se uz pomoć snažnih sredstava uklanjaju svi slojevi 
           stare boje i nečistoća. Ovaj postupak omogućuje dublje čišćenje i bolju pripremu površine za daljnju obradu.
@@ -65,9 +65,9 @@
       </div>
     </section>
 
-    <section id="popravak" class="bg-slate-600 text-white py-12 px-4">
+    <section id="popravak" class="bg-slate-600 text-white py-12 px-4 sm:px-6 md:px-10 lg:px-16">
       <div class="max-w-3xl pl-8 text-left">
-        <h3 class="text-4xl font-semibold mb-6">Popravak felgi</h3>
+        <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">Popravak felgi</h3>
     
         <!-- Ravnanje felgi -->
         <div class="mb-8">
@@ -92,9 +92,9 @@
       </div>
     </section>
 
-    <section id="cnc" class="bg-slate-500 text-white py-12 px-4">
+    <section id="cnc" class="bg-slate-500 text-white py-12 px-4 sm:px-6 md:px-10 lg:px-16">
       <div class="max-w-3xl ml-auto text-left pr-8">
-        <h3 class="text-4xl font-semibold mb-4">CNC obrada felgi (diamond cut)</h3>
+        <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">CNC obrada felgi (diamond cut)</h3>
         <p>CNC obrada felgi, poznata i kao diamond cut, predstavlja visoko precizan proces 
           strojne obrade kojim se postižu izuzetno glatke i reflektirajuće površine na licu felge. 
           Ova tehnika uključuje korištenje računalno upravljanog stroja (CNC tokarskog stroja) koji struže tanki 
@@ -105,9 +105,9 @@
       </div>
     </section>
 
-    <section id="vulkanizacija" class="bg-slate-400 text-white py-12 px-4">
+    <section id="vulkanizacija" class="bg-slate-400 text-white py-12 px-4 sm:px-6 md:px-10 lg:px-16">
       <div class="max-w-3xl pl-8 text-left">
-        <h3 class="text-4xl font-semibold mb-4">Vulkanizacija</h3>
+        <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">Vulkanizacija</h3>
         <p>Uz usluge popravka i obrade felgi, našim klijentima nudimo i 
           mogućnost vulkanizacije, čime štedite vrijeme i 
           pojednostavljujete cijeli proces. Ako dolazite kod nas na ravnanje, zavarivanje, plastifikaciju ili 
@@ -118,9 +118,9 @@
     </section>
 
     <!-- O nama sekcija -->
-    <section id="onama" class="bg-gray-100 py-16 px-4">
+    <section id="onama" class="bg-gray-100 py-12 px-4 sm:px-6 md:px-10 lg:px-16">
       <div class="max-w-3xl mx-auto text-center">
-        <h3 class="text-3xl font-semibold mb-4">O nama</h3>
+        <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">O nama</h3>
         <p class="text-gray-700 leading-relaxed mb-6">
           AluRepair je specijalizirana radionica za obradu aluminijskih felgi. 
           Uz to, omogućujemo i uslugu vulkanizacije kako bi cijeli proces bio brz, praktičan i obavljen na jednom mjestu.
@@ -149,9 +149,9 @@
     </section>
 
     <!-- Kontakt forma -->
-    <section id="kontakt" class="py-16 px-4 bg-gray-100"> 
+    <section id="kontakt" class="bg-gray-100 py-12 px-4 sm:px-6 md:px-10 lg:px-16"> 
       <div class="max-w-md mx-auto">
-        <h3 class="text-2xl font-semibold text-center mb-6">Kontaktirajte nas</h3>
+        <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-center mb-4">Kontaktirajte nas</h3>
         <form action="https://formsubmit.co/elena.nesek@gmail.com" method="POST" class="space-y-4">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_subject" value="Nova poruka sa stranice">
@@ -169,7 +169,7 @@
 
   <!-- Footer -->
   <footer class="text-center py-4 bg-gray-100 text-sm bg-white">
-    &copy; 2025 FelgePro - Sva prava pridržana.
+    &copy; AluRepair - Sva prava pridržana.
         <!-- Ikonica poziva -->
     <a href="tel:+385912345678" class="flex items-center gap-2 text-blue-600 hover:text-blue-800">
       📞 Nazovite nas
