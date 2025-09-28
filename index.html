@@ -10,6 +10,11 @@
       scroll-behavior: smooth;
     }
   </style>
+  <style>
+    html {
+      height: 100%;
+    }
+  </style>
 </head>
 <body class="bg-blue-100 text-gray-800 flex flex-col min-h-screen">
 
@@ -21,6 +26,7 @@
 
     <!-- Desno: O nama, Kontakt, Hamburger -->
     <div class="flex items-center gap-4 text-sm sm:text-base md:text-lg">
+      <a href="gallery.html" class="hover:text-blue-400">Galerija</a>
       <a href="#onama" class="hover:text-blue-400">O nama</a>
       <a href="#kontakt" class="hover:text-blue-400">Kontakt</a>
 
@@ -41,13 +47,14 @@
       <a href="#popravak" class="hover:text-blue-300">Popravak</a>
       <a href="#cnc" class="hover:text-blue-300">CNC</a>
       <a href="#vulkanizacija" class="hover:text-blue-300">Vulkanizacija</a>
+      <a href="#radijatori" class="hover:text-blue-300">Demontaža, montaža i plastificiranje radijatora</a>
     </nav>
   </div>
 </header>
 
   <!-- Gumbi za usluge -->
   <main class="flex-grow">
-    <section class="py-16 text-center bg-cover bg-center bg-no-repeat" style="background-image: url('images/pozadina.jpg');">
+    <section class="py-16 text-center bg-cover bg-center bg-no-repeat" style="background-image: url('images/pexels-ihsanaditya-5661682.jpg');">
       <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-10 drop-shadow-lg">
       <div class="grid grid-cols-1 sm:grid-cols-5 gap-4 max-w-6xl mx-auto">
     
@@ -60,6 +67,8 @@
         <a href="#cnc" class="bg-gray-800 bg-opacity-80 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-opacity-100 transition">CNC obrada felgi (diamond cut)</a>
     
         <a href="#vulkanizacija" class="bg-gray-800 bg-opacity-80 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-opacity-100 transition">Vulkanizacija</a>
+
+        <a href="#radijatori" class="col-span-full mx-auto w-fit bg-gray-800 bg-opacity-80 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-opacity-100 transition">Demontaža, montaža i plastificiranje radijatora</a>
     
       </div>
     </section>
@@ -143,13 +152,25 @@
       </div>
     </section>
 
+    <section id="radijatori" class="bg-slate-600 scroll-mt-28 text-white py-12 px-4 sm:px-6 md:px-10 lg:px-16">
+      <div class="max-w-3xl ml-auto text-left pr-8">
+        <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">Demontaža, montaža i plastificiranje radijatora</h3>
+        <p>Nudimo kompletnu uslugu demontaže, montaže, pjeskarenja i plastificiranja radijatorav - sve na vašoj kućnoj adresi. Naš tim dolazi k vama, pažljivo demontira radijatore iz postojećih instalacija te ih po završetku obrade ponovno montira na isto mjesto.
+          U procesu obrade, radijatori se prvo temeljito pjeskare kako bi se uklonile sve nečistoće i stara boja, a zatim se plastificiraju visokokvalitetnim slojem zaštite koji osigurava dugotrajnost i estetski izgled. Ova usluga dostupna je za sve vrste radijatora osim gusnatih.
+          Nakon tretmana, vaši će radijatori izgledati kao da su upravo izašli iz tvornice - sjajni, čisti i modernog izgleda. Sve obavljamo brzo, sigurno i profesionalno, bez potrebe da vi brinete o transportu ili montaži.</p>
+      </div>
+    </section>
+
     <!-- O nama sekcija -->
     <section id="onama" class="bg-gray-100 scroll-mt-28 py-12 px-4 sm:px-6 md:px-10 lg:px-16">
       <div class="max-w-3xl mx-auto text-center">
         <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">O nama</h3>
         <p class="text-gray-700 leading-relaxed mb-6">
           AluRepair je specijalizirana radionica za obradu aluminijskih felgi. 
-          Uz to, omogućujemo i uslugu vulkanizacije kako bi cijeli proces bio brz, praktičan i obavljen na jednom mjestu.
+          Uz to, omogućujemo i uslugu vulkanizacije kako bi cijeli proces bio brz, praktičan i obavljen na jednom mjestu.  
+          Osim felgi, nudimo i plastificiranje te pjeskarenje dijelova automobila poput amortizera, opruga, mostova i sličnih metalnih komponenti.   
+          Također, omogućujemo sigurno sezonsko skladištenje vaših guma i kotača, čime dodatno štedite prostor i vrijeme.
+          Nudimo i uslugu obrade radijatora - uključujući demontažu, montažu, pjeskarenje i plastificiranje, s dolaskom na vašu adresu. Radijatori nakon obrade izgledaju kao novi, a usluga je dostupna za sve vrste osim gusnatih.
         </p>
         <p class="text-gray-700 leading-relaxed mb-6">
           Tijekom obrade felgi, nudimo opciju da vaše vozilo ostavite kod nas, gdje će biti smješteno do završetka obrade. 
@@ -160,6 +181,8 @@
         <p class="text-gray-700 leading-relaxed mb-6">
           Standardni rok obrade četiri felge iznosi 3 do 7 radnih dana, ovisno o vrsti i opsegu zahvata. 
           Ako vam je potrebna brža usluga, nudimo i prioritetnu obradu uz nadoplatu, kojom se postupak završava u roku od najviše 2 radna dana.
+
+          Obrada radijatora (do pet komada) traje 7 do 10 radnih dana, a uz prioritetnu uslugu taj se rok može skratiti na najviše 5 radnih dana.
         </p>
         <p class="text-gray-700 leading-relaxed mb-6">
           Sve cijene naših usluga dostupne su na upit, jer ovise o vrsti i stanju felgi te opsegu potrebnih radova. 
@@ -194,7 +217,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="text-center py-4 bg-gray-100 text-sm bg-white">
+  <footer class="mt-8 text-center py-4 bg-gray-100 text-sm bg-white">
     &copy; AluRepair - Sva prava pridržana.
         <!-- Ikonica poziva -->
     <a href="tel:+385912345678" class="flex items-center gap-2 text-blue-600 hover:text-blue-800">
@@ -231,6 +254,36 @@
     document.querySelectorAll('#mobile-menu a').forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
+
+    <!-- Scroll-to-top gumb -->
+  <button id="scrollTopBtn" 
+    class="fixed bottom-6 right-6 bg-blue-600 text-white 
+          text-sm sm:text-base md:text-lg 
+          px-3 py-2 sm:px-4 sm:py-2 
+          rounded-full shadow-lg 
+          hover:bg-blue-700 transition hidden z-50">
+    <span class="mr-1">Početak</span><span class="text-base sm:text-lg">↑</span>
+  </button>
+  <script>
+    const scrollBtn = document.getElementById('scrollTopBtn');
+
+    // Pokaži gumb kad se scrolla 300px dolje
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollBtn.classList.remove('hidden');
+      } else {
+        scrollBtn.classList.add('hidden');
+      }
+    });
+
+    // Scroll na vrh kad se klikne
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
       });
     });
   </script>
