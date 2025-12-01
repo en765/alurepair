@@ -8,71 +8,107 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-cover bg-center bg-no-repeat text-gray-800" style="background-image: url('images/pexels-ihsanaditya-5661682.jpg');">
+<body class="relative text-gray-800">
 
+    <!-- Pozadinska slika -->
+    <div class="fixed inset-0 bg-cover bg-center bg-no-repeat z-0"
+        style="background-image: url('images/pexels-ihsanaditya-5661682.jpg');"></div>
+
+    <!-- Tamni overlay -->
+    <div class="fixed inset-0 bg-black bg-opacity-60 z-0"></div>
+
+    <!-- Header -->
     <header class="bg-blue-900 text-white py-4 px-6 flex justify-between items-center shadow-md sticky top-0 z-50">
-        <h1 class="text-2xl font-bold">AluRepair</h1>
-        <nav class="space-x-4">
+        <div class="flex items-center gap-2">
+            <img src="images/logo.png" alt="AluRepair logo" class="h-12 sm:h-16 w-auto">
+            <h1 class="text-lg sm:text-2xl font-bold">AluRepair</h1>
+        </div>
+        <nav class="flex flex-wrap gap-x-4 gap-y-1 justify-end text-sm sm:text-base">
             <a href="index.html" class="hover:text-blue-400">Početna</a>
             <a href="gallery.html" class="hover:text-blue-400">Galerija</a>
         </nav>
     </header>
 
-    <main class="py-12 px-4">
-        <h2 class="text-3xl font-bold text-center mb-8">Galerija radova</h2>
+    <!-- Glavni sadržaj -->
+    <main class="relative z-10 py-12 px-4">
+        <h2 class="text-3xl font-bold text-center text-white mb-8">Galerija radova</h2>
+
         <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl mx-auto px-4">
+            <!-- GALERIJA -->
             <img src="images/felga1.jpg" alt="Felga 1" onclick="openLightbox(this.src)"
-                class=" gallery-img cursor-pointer w-full aspect-square object-cover rounded-lg shadow-md transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out" />
+                class="gallery-img cursor-pointer w-full aspect-square object-cover rounded-lg shadow-md transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out" />
+
             <img src="images/felga2.jpg" alt="Felga 2" onclick="openLightbox(this.src)"
                 class="gallery-img cursor-pointer w-full aspect-square object-cover rounded-lg shadow-md transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out" />
+
             <img src="images/felga3.jpg" alt="Felga 3" onclick="openLightbox(this.src)"
                 class="gallery-img cursor-pointer w-full aspect-square object-cover rounded-lg shadow-md transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out" />
+
             <img src="images/felga4.jpg" alt="Felga 4" onclick="openLightbox(this.src)"
-                class=" gallery-imgcursor-pointer w-full aspect-square object-cover rounded-lg shadow-md transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out" />
+                class="gallery-img cursor-pointer w-full aspect-square object-cover rounded-lg shadow-md transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out" />
+
             <img src="images/felga5.jpg" alt="Felga 5" onclick="openLightbox(this.src)"
                 class="gallery-img cursor-pointer w-full aspect-square object-cover rounded-lg shadow-md transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out" />
+
             <img src="images/felga6.jpg" alt="Felga 6" onclick="openLightbox(this.src)"
                 class="gallery-img cursor-pointer w-full aspect-square object-cover rounded-lg shadow-md transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out" />
+
             <img src="images/felga7.jpg" alt="Felga 7" onclick="openLightbox(this.src)"
                 class="gallery-img cursor-pointer w-full aspect-square object-cover rounded-lg shadow-md transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out" />
+
             <img src="images/felga8.jpg" alt="Felga 8" onclick="openLightbox(this.src)"
                 class="gallery-img cursor-pointer w-full aspect-square object-cover rounded-lg shadow-md transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out" />
+
             <img src="images/felga9.jpeg" alt="Felga 9" onclick="openLightbox(this.src)"
                 class="gallery-img cursor-pointer w-full aspect-square object-cover rounded-lg shadow-md transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out" />
+
             <img src="images/felga10.jpeg" alt="Felga 10" onclick="openLightbox(this.src)"
                 class="gallery-img cursor-pointer w-full aspect-square object-cover rounded-lg shadow-md transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out" />
+
             <img src="images/felga11.jpeg" alt="Felga 11" onclick="openLightbox(this.src)"
                 class="gallery-img cursor-pointer w-full aspect-square object-cover rounded-lg shadow-md transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out" />
+
             <img src="images/felga12.jpeg" alt="Felga 12" onclick="openLightbox(this.src)"
                 class="gallery-img cursor-pointer w-full aspect-square object-cover rounded-lg shadow-md transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out" />
+
             <img src="images/felga13.jpeg" alt="Felga 13" onclick="openLightbox(this.src)"
                 class="gallery-img cursor-pointer w-full aspect-square object-cover rounded-lg shadow-md transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out" />
+
             <img src="images/felga14.jpeg" alt="Felga 14" onclick="openLightbox(this.src)"
                 class="gallery-img cursor-pointer w-full aspect-square object-cover rounded-lg shadow-md transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out" />
+
             <img src="images/felga15.jpg" alt="Felga 15" onclick="openLightbox(this.src)"
                 class="gallery-img cursor-pointer w-full aspect-square object-cover rounded-lg shadow-md transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out" />
         </div>
 
         <!-- Lightbox -->
-        <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
-            <img id="lightbox-img" src="" class="max-w-full max-h-full rounded-lg shadow-lg">
+        <div id="lightbox"
+            class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-[9999] hidden">
+            <!-- Slika -->
+            <img id="lightbox-img" src="" class="max-w-full max-h-full rounded-lg shadow-lg z-[10]">
 
-            <!-- Zatvori gumb -->
-            <button onclick="closeLightbox()"
-                class="absolute top-4 right-4 text-white text-3xl font-bold">&times;</button>
+        
+            <!-- Zatvori gumb (X) -->
+            <button onclick="closeLightbox()" class="absolute top-20 right-6 z-[60] text-white text-5xl font-bold 
+         hover:text-blue-400 transition duration-300 select-none">
+                &times;
+            </button>
 
             <!-- Strelica lijevo -->
-            <button id="prev-btn" class="absolute left-4 text-white text-3xl hover:text-blue-400">
+            <button id="prev-btn" class="absolute left-6 z-[99999] text-white text-5xl font-bold 
+           hover:text-blue-400 transition select-none">
                 &#10094;
             </button>
 
             <!-- Strelica desno -->
-            <button id="next-btn" class="absolute right-4 text-white text-3xl hover:text-blue-400">
+            <button id="next-btn" class="absolute right-6 z-[99999] text-white text-5xl font-bold 
+           hover:text-blue-400 transition select-none">
                 &#10095;
             </button>
         </div>
     </main>
 
+    <!-- Skripta -->
     <script>
         const images = Array.from(document.querySelectorAll('.gallery-img'));
         const lightbox = document.getElementById('lightbox');
@@ -89,7 +125,7 @@
         }
 
         function closeLightbox() {
-            lightbox.classList.add('hidden');
+            document.getElementById('lightbox').classList.add('hidden');
             document.body.style.overflow = '';
         }
 
