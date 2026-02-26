@@ -1,339 +1,631 @@
 <!DOCTYPE html>
 <html lang="hr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- SEO -->
+
   <title>AluRepair | Popravak i obrada aluminijskih felgi</title>
-  <meta name="description" content="Specijalizirana radionica za popravak, pjeskarenje i plastificiranje aluminijskih felgi. Vulkanizacija i više.">
+  <meta name="description"
+    content="Specijalizirana radionica za popravak, pjeskarenje i plastificiranje aluminijskih felgi. Vulkanizacija i više.">
   <meta name="keywords" content="alu felge, popravak felgi, pjeskarenje, plastificiranje, zagreb">
   <meta name="author" content="AluRepair">
   <meta property="og:title" content="AluRepair | Obrada i popravak felgi">
   <meta property="og:description" content="Profesionalna obrada felgi. Brza usluga i kvaliteta.">
-  <meta property="og:image" content="https://alurepair.vercel.app/images/logo.png">
+  <meta property="og:image" content="https://alurepair.vercel.app/images/alu-repair_logo.jpeg">
   <meta property="og:url" content="https://alurepair.vercel.app">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
     html {
       scroll-behavior: smooth;
     }
   </style>
   <style>
-    html {
-      height: 100%;
-    }
-  </style>
+  .nav-pill{
+    padding: 0.45rem 0.9rem;
+    border-radius: 9999px;
+    color: rgba(255,255,255,.9);
+    background: rgba(255,255,255,.10);
+    border: 1px solid rgba(255,255,255,.16);
+    backdrop-filter: blur(8px);
+    transition: transform .15s ease, background .15s ease, border-color .15s ease, box-shadow .15s ease;
+  }
+  .nav-pill:hover{
+    background: rgba(255,255,255,.18);
+    border-color: rgba(255,255,255,.28);
+    box-shadow: 0 10px 25px rgba(0,0,0,.25);
+    transform: translateY(-1px);
+  }
+  .nav-pill:active{
+    transform: translateY(0px);
+  }
+</style>
 </head>
-<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
-<!-- Header -->
-<header class="bg-blue-900 shadow-md text-white sticky top-0 z-50">
-  <div class="container mx-auto px-4 py-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-y-2">
-    
-    <!-- Gornji red: logo i hamburger -->
-    <div class="flex justify-between items-center">
-      <!-- Lijevo: logo -->
-      <!-- Lijevo: logo + naziv -->
-    <div class="flex items-center gap-2">
-      <img src="images/logo.png" alt="AluRepair logo" class="h-12 sm:h-16 w-auto">
-      <h1 class="text-lg sm:text-2xl font-bold">AluRepair</h1>
-    </div>
 
-      <!-- Hamburger - samo na manjim ekranima -->
-      <button id="menu-btn" class="block sm:hidden focus:outline-none">
-        <svg class="w-6 h-6 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-    </div>
+<body class="bg-slate-950 text-slate-100 min-h-screen">
 
-    <!-- Linkovi -->
-    <div class="hidden sm:flex items-center gap-3 text-sm sm:text-base">
-      <a href="gallery.html" class="hover:text-blue-400">Galerija</a>
-      <a href="cjenik.html" class="hover:text-blue-400">Cjenik</a>
-      <a href="#onama" class="hover:text-blue-400">O nama</a>
-      <a href="#kontakt" class="hover:text-blue-400">Kontakt</a>
-    </div>
-  </div>
+  <main>
 
-  <!-- Mobilni padajući meni -->
-  <div id="mobile-menu" class="hidden px-4 pb-4 sm:hidden">
-    <nav class="flex flex-col space-y-2 text-sm">
-      <a href="gallery.html" class="hover:text-blue-300">Galerija</a>
-      <a href="cjenik.html" class="hover:text-blue-300">Cjenik</a>
-      <a href="#onama" class="hover:text-blue-300">O nama</a>
-      <a href="#kontakt" class="hover:text-blue-300">Kontakt</a>
-      <hr class="border-gray-600" />
-      <a href="#plastificiranje" class="hover:text-blue-300">Plastificiranje</a>
-      <a href="#pjeskarenje" class="hover:text-blue-300">Pjeskarenje</a>
-      <a href="#popravak" class="hover:text-blue-300">Popravak</a>
-      <a href="#cnc" class="hover:text-blue-300">CNC</a>
-      <a href="#vulkanizacija" class="hover:text-blue-300">Vulkanizacija</a>
-      <a href="#keramika" class="hover:text-blue-300">Keramički zaštitni premaz </a>
-    </nav>
-  </div>
-</header>
+    <!-- HERO -->
+    <section class="relative bg-cover bg-center bg-no-repeat"
+      style="background-image: url('images/pexels-ihsanaditya-5661682.jpg');">
 
-  <!-- Gumbi za usluge -->
-  <main class="flex-grow">
-    <section class="py-16 text-center bg-cover bg-center bg-no-repeat" style="background-image: url('images/pexels-ihsanaditya-5661682.jpg');">
-      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-10 drop-shadow-lg">
-      <div class="grid grid-cols-1 sm:grid-cols-5 gap-4 max-w-6xl mx-auto">
-    
-        <a href="#plastificiranje" class="bg-gray-800 bg-opacity-80 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-opacity-100 transition">Plastificiranje</a>
+      <!-- overlay -->
+      <div class="absolute inset-0 bg-slate-950/70"></div>
 
-        <a href="#pjeskarenje" class="bg-gray-800 bg-opacity-80 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-opacity-100 transition">Pjeskarenje i kemijsko skidanje boje</a>
-    
-        <a href="#popravak" class="bg-gray-800 bg-opacity-80 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-opacity-100 transition">Popravak felgi (ravnanje i zavarivanje)</a>
-    
-        <a href="#cnc" class="bg-gray-800 bg-opacity-80 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-opacity-100 transition">CNC obrada felgi (diamond cut)</a>
-    
-        <a href="#vulkanizacija" class="bg-gray-800 bg-opacity-80 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-opacity-100 transition">Vulkanizacija</a>
+      <div class="relative max-w-6xl mx-auto px-4 sm:px-6 md:px-10 py-10 sm:py-14">
+        <!-- Top: brand + nav -->
+        <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
 
-        <a href="#keramika" class="col-span-full mx-auto w-fit bg-gray-800 bg-opacity-80 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-opacity-100 transition">Keramički zaštitni premaz</a>
-    
-      </div>
-    </section>
+          <!-- brand -->
+          <div class="flex items-center gap-3 sm:gap-4">
+            <img src="images/alu-repair_logo.jpeg" alt="AluRepair logo"
+              class="h-12 w-12 sm:h-14 sm:w-14 rounded-full ring-1 ring-white/15">
+            <div>
+              <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">AluRepair</h1>
+              <p class="text-white/80 text-sm sm:text-base">Popravak i obrada aluminijskih felgi</p>
+            </div>
+          </div>
 
-    <!-- Sekcije usluga -->
-    <section id="plastificiranje" class="bg-slate-700 scroll-mt-28 text-white py-12 px-4 sm:px-6 md:px-10 lg:px-16">
-      <div class="max-w-3xl pl-8 text-left">
-        <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">Plastificiranje</h3>
-        <p class="leading-relaxed">Plastificiranje felgi je proces elektrostatskog nanošenja 
-          praha koji se potom termički stvrdnjava u peći, čime se dobiva čvrst, 
-          postojan i estetski atraktivan sloj. Ova metoda nudi vrhunsku zaštitu od korozije, 
-          mehaničkih oštećenja i utjecaja vremenskih uvjeta. Felge se prije plastificiranja 
-          temeljito pripremaju pjeskarenjem i kemijskim čišćenjem kako bi se uklonile sve nečistoće i 
-          stara boja. Uz felge, plastificirati se mogu i drugi dijelovi automobila poput nosača, šasija, 
-          nosača motora i raznih metalnih komponenti. Ipak, felge ostaju najčešći izbor zbog stalne izloženosti 
-          cestovnim uvjetima i vizualne važnosti. Kvalitetno plastificirane felge ne samo da izgledaju kao nove, već i traju znatno duže od klasično lakiranih.</p>
-      </div>
-    </section>
+          <!-- NAV desktop -->
+          <div class="flex items-center gap-2 sm:gap-3 text-sm sm:text-base">
+            <a href="gallery.html" class="nav-pill">Galerija</a>
+            <a href="cjenik.html" class="nav-pill">Cjenik</a>
+            <a href="#usluge" class="nav-pill">Usluge</a>
+            <a href="#acc-onama" class="nav-pill" data-open="acc-onama">O nama</a>
+            <a href="#acc-kontakt" class="nav-pill" data-open="acc-kontakt">Kontakt</a>
+          </div>
 
-    <section id="pjeskarenje" class="bg-slate-500 scroll-mt-28 text-white py-12 px-4 sm:px-6 md:px-10 lg:px-16">
-      <div class="max-w-3xl ml-auto text-left pr-8">
-        <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">Pjeskarenje i kemijsko skidanje boje</h3>
-        <p class="leading-relaxed">Prvi korak u pripremi felgi i drugih metalnih dijelova automobila je kemijsko 
-          skidanje boje u posebnoj kadi, gdje se uz pomoć snažnih sredstava uklanjaju svi slojevi 
-          stare boje i nečistoća. Ovaj postupak omogućuje dublje čišćenje i bolju pripremu površine za daljnju obradu.
-          Nakon toga slijedi pjeskarenje finim pijeskom od aluminijevog oksida niske granulacije, kojim se površina dodatno 
-          očisti, izravna i matira bez oštećenja metala. Ova kombinacija metoda posebno je učinkovita kod felgi, koje zahtijevaju 
-          visoku preciznost i temeljitu obradu. Osim felgi, isti se proces koristi i za ostale metalne dijelove automobila.</p>
-      </div>
-    </section>
+          <!-- Hamburger (mobile) -->
+          <div class="sm:hidden flex justify-end">
+            <button id="menu-btn"
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/10 border border-white/10 text-white/90 hover:bg-white/15 transition"
+              aria-expanded="false" aria-controls="mobile-menu">
+              <span class="text-lg">☰</span>
+              <span class="text-sm font-semibold"></span>
+            </button>
+          </div>
+        </div>
 
-    <section id="popravak" class="bg-slate-600 scroll-mt-28 text-white py-12 px-4 sm:px-6 md:px-10 lg:px-16">
-      <div class="max-w-3xl pl-8 text-left">
-        <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">Popravak felgi</h3>
-    
-        <!-- Ravnanje felgi -->
-        <div class="mb-8">
-          <h4 class="text-xl font-semibold mb-2">Ravnanje felgi</h4>
-          <p class="leading-relaxed">
-            Ravnanje felgi se provodi u slučajevima kada su felge iskrivljene zbog udaraca u rupe, rubnjake ili druge nepravilnosti na cesti. 
-            Proces se vrši pomoću specijaliziranih hidrauličnih alata koji precizno vraćaju felgu u njenu originalnu geometriju. 
-            Time se osigurava pravilno prianjanje gume, sigurnost vožnje i sprječava dodatno trošenje ovjesa i guma.
+        <!-- Mobile menu panel -->
+        <div id="mobile-menu"
+          class="sm:hidden mt-4 hidden rounded-2xl overflow-hidden border border-white/10 bg-slate-950/40 backdrop-blur">
+          <div class="p-3 grid grid-cols-2 gap-2 text-sm">
+            <a href="gallery.html"
+              class="px-3 py-2 rounded-xl bg-white/5 hover:bg-white/10 transition text-white/90">Galerija</a>
+            <a href="cjenik.html"
+              class="px-3 py-2 rounded-xl bg-white/5 hover:bg-white/10 transition text-white/90">Cjenik</a>
+            <a href="#usluge"
+              class="px-3 py-2 rounded-xl bg-white/5 hover:bg-white/10 transition text-white/90">Usluge</a>
+            <a href="#acc-onama" data-open="acc-onama"
+              class="px-3 py-2 rounded-xl bg-white/5 hover:bg-white/10 transition text-white/90">O nama</a>
+            <a href="#acc-kontakt" data-open="acc-kontakt"
+              class="px-3 py-2 rounded-xl bg-white/5 hover:bg-white/10 transition text-white/90 col-span-2 text-center">
+              Kontakt
+            </a>
+          </div>
+        </div>
+
+        <!-- Chips / tagovi -->
+        <div class="mt-8 sm:mt-10">
+          <!-- mobile: grid 2 cols, desktop: flex wrap -->
+          <!-- Usluge kao tekst ispod brenda -->
+          <div class="mt-6">
+            <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm sm:text-base font-medium text-white/80">
+
+              <span class="hover:text-white transition duration-200">
+                Plastificiranje
+              </span>
+
+              <span class="hover:text-white transition duration-200">
+                Pjeskarenje i skidanje boje
+              </span>
+
+              <span class="hover:text-white transition duration-200">
+                Ravnanje felgi
+              </span>
+
+              <span class="hover:text-white transition duration-200">
+                Zavarivanje (TIG)
+              </span>
+
+              <span class="hover:text-white transition duration-200">
+                CNC (diamond cut)
+              </span>
+
+              <span class="hover:text-white transition duration-200">
+                Vulkanizacija
+              </span>
+
+            </div>
+          </div>
+
+          <p class="mt-5 text-white/75 text-sm sm:text-base max-w-2xl">
+            Sve na jednom mjestu: priprema, popravak i završna obrada felgi uz brzu komunikaciju i dogovor.
           </p>
         </div>
-    
-        <!-- Zavarivanje felgi -->
-        <div>
-          <h4 class="text-xl font-semibold mb-2">Zavarivanje felgi</h4>
-          <p class="leading-relaxed">
-            Zavarivanje felgi se koristi kada dođe do napuknuća ili lomova, najčešće na unutarnjoj strani felge. 
-            Korištenjem postupka TIG zavarivanja aluminijskih legura, oštećeni dijelovi se precizno obnavljaju. 
-            Nakon zavarivanja, felga se dodatno obrađuje i ravna po potrebi kako bi se postigla maksimalna sigurnost i funkcionalnost.
-          </p>
+      </div>
+    </section>
+
+    <!-- ACCORDION -->
+    <section id="usluge" class="py-12 sm:py-14 px-4 sm:px-6 md:px-10 bg-gradient-to-b from-slate-950 to-slate-900">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-center text-3xl sm:text-3xl font-extrabold mb-10 text-white">
+          Usluge i informacije
+        </h2>
+
+        <div class="space-y-5">
+
+          <!-- Plastificiranje -->
+          <div class="rounded-2xl overflow-hidden border border-white/10 shadow-xl bg-slate-900/60">
+            <button type="button"
+              class="accordion-btn w-full bg-slate-800/60 hover:bg-slate-800/80 transition px-5 sm:px-6 py-5 text-left"
+              data-target="acc-plast" aria-expanded="false">
+              <div class="flex items-center justify-between gap-4">
+                <div class="min-w-0">
+                  <h3 class="text-xl sm:text-2xl font-bold text-white truncate">Plastificiranje</h3>
+                  <p class="text-white/70 text-sm sm:text-base">Zaštita, izgled i dugotrajnost felgi</p>
+                </div>
+                <span class="accordion-arrow text-white/60 text-xl transition-transform shrink-0">▾</span>
+              </div>
+            </button>
+
+            <!-- MANJE NA MOBITELU -->
+            <div id="acc-plast"
+              class="accordion-content hidden bg-slate-900/40 px-5 sm:px-6 py-6 text-white/85 text-sm sm:text-base leading-6 sm:leading-relaxed">
+              Plastificiranje felgi je proces elektrostatskog nanošenja praha koji se potom termički stvrdnjava u peći,
+              čime se dobiva čvrst, postojan i estetski atraktivan sloj. Ova metoda nudi vrhunsku zaštitu od korozije,
+              mehaničkih oštećenja i utjecaja vremenskih uvjeta. Felge se prije plastificiranja temeljito pripremaju
+              pjeskarenjem i kemijskim čišćenjem kako bi se uklonile sve nečistoće i stara boja. Uz felge,
+              plastificirati
+              se mogu i drugi dijelovi automobila poput nosača, šasija, nosača motora i raznih metalnih komponenti.
+              Kvalitetno plastificirane felge ne samo da izgledaju kao nove, već i traju znatno duže od klasično
+              lakiranih.
+            </div>
+          </div>
+
+          <!-- Pjeskarenje -->
+          <div class="rounded-2xl overflow-hidden border border-white/10 shadow-xl bg-slate-900/60">
+            <button type="button"
+              class="accordion-btn w-full bg-slate-800/60 hover:bg-slate-800/80 transition px-5 sm:px-6 py-5 text-left"
+              data-target="acc-pjesk" aria-expanded="false">
+              <div class="flex items-center justify-between gap-4">
+                <div class="min-w-0">
+                  <h3 class="text-xl sm:text-2xl font-bold text-white">Pjeskarenje i kemijsko skidanje boje</h3>
+                  <p class="text-white/70 text-sm sm:text-base">Temeljita priprema prije završne obrade</p>
+                </div>
+                <span class="accordion-arrow text-white/60 text-xl transition-transform shrink-0">▾</span>
+              </div>
+            </button>
+
+            <div id="acc-pjesk"
+              class="accordion-content hidden bg-slate-900/40 px-5 sm:px-6 py-6 text-white/85 text-sm sm:text-base leading-6 sm:leading-relaxed">
+              Prvi korak u pripremi felgi i drugih metalnih dijelova automobila je kemijsko skidanje boje u posebnoj
+              kadi,
+              gdje se uz pomoć snažnih sredstava uklanjaju svi slojevi stare boje i nečistoća. Nakon toga slijedi
+              pjeskarenje
+              finim pijeskom od aluminijevog oksida niske granulacije, kojim se površina dodatno očisti, izravna i
+              matira bez
+              oštećenja metala. Ova kombinacija metoda posebno je učinkovita kod felgi koje zahtijevaju visoku
+              preciznost i
+              temeljitu obradu.
+            </div>
+          </div>
+
+          <!-- Popravak -->
+          <div class="rounded-2xl overflow-hidden border border-white/10 shadow-xl bg-slate-900/60">
+            <button type="button"
+              class="accordion-btn w-full bg-slate-800/60 hover:bg-slate-800/80 transition px-5 sm:px-6 py-5 text-left"
+              data-target="acc-pop" aria-expanded="false">
+              <div class="flex items-center justify-between gap-4">
+                <div class="min-w-0">
+                  <h3 class="text-xl sm:text-2xl font-bold text-white">Popravak felgi</h3>
+                  <p class="text-white/70 text-sm sm:text-base">Ravnanje i zavarivanje za sigurnu vožnju</p>
+                </div>
+                <span class="accordion-arrow text-white/60 text-xl transition-transform shrink-0">▾</span>
+              </div>
+            </button>
+
+            <div id="acc-pop"
+              class="accordion-content hidden bg-slate-900/40 px-5 sm:px-6 py-6 text-white/85 text-sm sm:text-base leading-6 sm:leading-relaxed">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+
+                <div class="space-y-6">
+                  <div>
+                    <h4 class="text-white font-semibold text-base sm:text-lg mb-2">Ravnanje felgi</h4>
+                    <p>
+                      Ravnanje felgi se provodi kada su felge iskrivljene zbog udaraca u rupe, rubnjake ili druge
+                      nepravilnosti na cesti. Proces se vrši pomoću specijaliziranih hidrauličnih alata koji precizno
+                      vraćaju felgu u originalnu geometriju, čime se osigurava pravilno prianjanje gume i sigurnost
+                      vožnje.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 class="text-white font-semibold text-base sm:text-lg mb-2">Zavarivanje felgi</h4>
+                    <p>
+                      Zavarivanje felgi se koristi kada dođe do napuknuća ili lomova. Korištenjem postupka TIG
+                      zavarivanja
+                      aluminijskih legura, oštećeni dijelovi se precizno obnavljaju. Nakon zavarivanja, felga se dodatno
+                      obrađuje i ravna po potrebi kako bi se postigla maksimalna sigurnost i funkcionalnost.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex justify-center md:justify-end">
+                  <div id="video-rotator"
+                    class="relative w-full max-w-xl h-56 sm:h-72 md:h-80 rounded-2xl shadow-xl overflow-hidden bg-slate-800/40 border border-white/10">
+                    <video id="vid1" class="absolute inset-0 block w-full h-full object-cover" autoplay loop muted
+                      playsinline>
+                      <source src="images/varenje.mp4" type="video/mp4">
+                    </video>
+                    <video id="vid2" class="absolute inset-0 block w-full h-full object-cover hidden" autoplay loop
+                      muted playsinline>
+                      <source src="images/ravnanje.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- CNC -->
+          <div class="rounded-2xl overflow-hidden border border-white/10 shadow-xl bg-slate-900/60">
+            <button type="button"
+              class="accordion-btn w-full bg-slate-800/60 hover:bg-slate-800/80 transition px-5 sm:px-6 py-5 text-left"
+              data-target="acc-cnc" aria-expanded="false">
+              <div class="flex items-center justify-between gap-4">
+                <div class="min-w-0">
+                  <h3 class="text-xl sm:text-2xl font-bold text-white">CNC obrada felgi (diamond cut)</h3>
+                  <p class="text-white/70 text-sm sm:text-base">Sjajni finiš i precizna obrada</p>
+                </div>
+                <span class="accordion-arrow text-white/60 text-xl transition-transform shrink-0">▾</span>
+              </div>
+            </button>
+
+            <div id="acc-cnc"
+              class="accordion-content hidden bg-slate-900/40 px-5 sm:px-6 py-6 text-white/85 text-sm sm:text-base leading-6 sm:leading-relaxed">
+              CNC obrada felgi (diamond cut) je visoko precizan proces strojne obrade kojim se postižu izuzetno glatke i
+              reflektirajuće površine na licu felge. CNC stroj skida tanki sloj aluminija s površine felge, otkrivajući
+              sjajan metalni finiš. Nakon obrade felga se dodatno premazuje prozirnim zaštitnim lakom radi sprječavanja
+              oksidacije i produljenja trajnosti.
+            </div>
+          </div>
+
+          <!-- Vulkanizacija -->
+          <div class="rounded-2xl overflow-hidden border border-white/10 shadow-xl bg-slate-900/60">
+            <button type="button"
+              class="accordion-btn w-full bg-slate-800/60 hover:bg-slate-800/80 transition px-5 sm:px-6 py-5 text-left"
+              data-target="acc-vulk" aria-expanded="false">
+              <div class="flex items-center justify-between gap-4">
+                <div class="min-w-0">
+                  <h3 class="text-xl sm:text-2xl font-bold text-white">Vulkanizacija</h3>
+                  <p class="text-white/70 text-sm sm:text-base">Montaža, demontaža i balansiranje na jednom mjestu</p>
+                </div>
+                <span class="accordion-arrow text-white/60 text-xl transition-transform shrink-0">▾</span>
+              </div>
+            </button>
+
+            <div id="acc-vulk"
+              class="accordion-content hidden bg-slate-900/40 px-5 sm:px-6 py-6 text-white/85 text-sm sm:text-base leading-6 sm:leading-relaxed">
+              Uz usluge popravka i obrade felgi nudimo i vulkanizaciju. Ako dolazite na ravnanje, zavarivanje,
+              plastifikaciju
+              ili CNC obradu felgi, možete odmah obaviti i montažu, demontažu te balansiranje guma. Također nudimo
+              opciju da
+              vozilo ostavite kod nas dok su felge na obradi.
+            </div>
+          </div>
+
+          <!-- O nama -->
+          <div class="rounded-2xl overflow-hidden border border-white/10 shadow-xl bg-slate-900/60">
+            <button type="button"
+              class="accordion-btn w-full bg-slate-800/60 hover:bg-slate-800/80 transition px-5 sm:px-6 py-5 text-left"
+              data-target="acc-onama" aria-expanded="false">
+              <div class="flex items-center justify-between gap-4">
+                <div class="min-w-0">
+                  <h3 class="text-xl sm:text-2xl font-bold text-white">O nama</h3>
+                  <p class="text-white/70 text-sm sm:text-base">Tko smo i kako radimo</p>
+                </div>
+                <span class="accordion-arrow text-white/60 text-xl transition-transform shrink-0">▾</span>
+              </div>
+            </button>
+
+            <div id="acc-onama"
+              class="accordion-content hidden bg-slate-900/40 px-5 sm:px-6 py-6 text-white/85 text-sm sm:text-base leading-6 sm:leading-relaxed">
+              <p class="mb-4">
+                AluRepair je specijalizirana radionica za obradu aluminijskih felgi. Uz to, omogućujemo i uslugu
+                vulkanizacije
+                kako bi cijeli proces bio brz, praktičan i obavljen na jednom mjestu. Osim felgi, nudimo i
+                plastificiranje te
+                pjeskarenje dijelova automobila poput amortizera, opruga, mostova i sličnih metalnih komponenti.
+              </p>
+              <p class="mb-4">
+                Tijekom obrade felgi nudimo opciju da vaše vozilo ostavite kod nas. Dostupna je usluga preuzimanja i
+                povrata felgi
+                na vašoj adresi (Zagreb i okolica), kao i mogućnost slanja felgi putem dostavne službe uz nadoplatu.
+              </p>
+              <p class="mb-4">
+                Standardni rok obrade četiri felge je 24–48 sati, ovisno o vrsti i opsegu zahvata. Za bržu uslugu nudimo
+                i
+                prioritetnu obradu uz nadoplatu (do 12 sati).
+              </p>
+              <p>
+                Sve cijene su dostupne na upit jer ovise o stanju felgi i potrebnim radovima. Za bržu procjenu pošaljite
+                fotografije
+                putem WhatsAppa ili nam se javite e-mailom/telefonom.
+              </p>
+            </div>
+          </div>
+
+          <!-- Kontakt -->
+          <div class="rounded-2xl overflow-hidden border border-white/10 shadow-xl bg-slate-900/60">
+            <button type="button"
+              class="accordion-btn w-full bg-slate-800/60 hover:bg-slate-800/80 transition px-5 sm:px-6 py-5 text-left"
+              data-target="acc-kontakt" aria-expanded="false">
+              <div class="flex items-center justify-between gap-4">
+                <div class="min-w-0">
+                  <h3 class="text-xl sm:text-2xl font-bold text-white">Kontakt</h3>
+                  <p class="text-white/70 text-sm sm:text-base">Pošaljite upit ili nam se javite direktno</p>
+                </div>
+                <span class="accordion-arrow text-white/60 text-xl transition-transform shrink-0">▾</span>
+              </div>
+            </button>
+
+            <div id="acc-kontakt" class="accordion-content hidden bg-slate-900/40 px-5 sm:px-6 py-6">
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                <div class="text-white/85 leading-6 sm:leading-relaxed text-sm sm:text-base">
+                  <p class="mb-3">
+                    <a href="https://wa.me/385981921561" target="_blank"
+                      class="text-emerald-300 hover:text-emerald-200 underline">WhatsApp: +385 98 192 1561</a>
+                  </p>
+                  <p class="mb-3">
+                    <a href="mailto:alurepair1@gmail.com"
+                      class="text-rose-300 hover:text-rose-200 underline">alurepair1@gmail.com</a>
+                  </p>
+                  <p class="mb-6">
+                    <a href="tel:+385981921561" class="text-sky-300 hover:text-sky-200 underline">Telefon: +385 98 192
+                      1561</a>
+                  </p>
+
+                  <div class="flex items-center gap-6">
+                    <a href="https://www.facebook.com/1JacvyczZj/?mibextid=wwXIfr" target="_blank"
+                      class="text-white/60 hover:text-white text-3xl">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/popravak_felgi_alurepair?igsh=MWY2bzNmaTd0eTVpMA=="
+                      target="_blank" class="text-white/60 hover:text-white text-3xl">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@alurepair1?_r=1&_t=ZN-91xnLVbacxa" target="_blank"
+                      class="text-white/60 hover:text-white text-3xl">
+                      <i class="fab fa-tiktok"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- forma -->
+                <div>
+                  <form id="kontakt-form" class="space-y-4">
+                    <input type="text" name="ime" placeholder="Ime i prezime"
+                      class="w-full rounded-lg px-4 py-2 bg-slate-950/40 border border-white/10 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-white/20"
+                      required>
+                    <input type="email" name="email" placeholder="Email"
+                      class="w-full rounded-lg px-4 py-2 bg-slate-950/40 border border-white/10 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-white/20"
+                      required>
+                    <input type="tel" name="telefon" placeholder="Broj mobitela"
+                      class="w-full rounded-lg px-4 py-2 bg-slate-950/40 border border-white/10 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-white/20"
+                      required>
+                    <textarea name="poruka" rows="4" placeholder="Poruka"
+                      class="w-full rounded-lg px-4 py-2 bg-slate-950/40 border border-white/10 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-white/20"
+                      required></textarea>
+                    <button type="submit"
+                      class="bg-white/15 hover:bg-white/20 text-white px-6 py-2 rounded-lg transition border border-white/10">
+                      Pošaljite
+                    </button>
+                  </form>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
         </div>
-    
+
+        <footer class="text-center text-white/50 text-sm mt-12">
+          &copy; AluRepair
+        </footer>
       </div>
     </section>
 
-    <section id="cnc" class="bg-slate-500 scroll-mt-28 text-white py-12 px-4 sm:px-6 md:px-10 lg:px-16">
-      <div class="max-w-3xl ml-auto text-left pr-8">
-        <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">CNC obrada felgi (diamond cut)</h3>
-        <p>CNC obrada felgi, poznata i kao diamond cut, predstavlja visoko precizan proces 
-          strojne obrade kojim se postižu izuzetno glatke i reflektirajuće površine na licu felge. 
-          Ova tehnika uključuje korištenje računalno upravljanog stroja (CNC tokarskog stroja) koji struže tanki 
-          sloj aluminija s površine felge, otkrivajući sjajan metalni finiš. Prije same obrade, felga se detaljno priprema, 
-          čisti i ravna kako bi rezultat bio savršeno ravnomjeran. Nakon tokarenja, felga se dodatno premazuje zaštitnim slojem 
-          prozirnog laka kako bi se spriječila oksidacija i produžila trajnost. Diamond cut obrada je posebno popularna kod modernih 
-          vozila zbog elegantnog i sportskog izgleda koji pruža.</p>
-      </div>
-    </section>
-
-    <section id="vulkanizacija" class="bg-slate-400 scroll-mt-28 text-white py-12 px-4 sm:px-6 md:px-10 lg:px-16">
-      <div class="max-w-3xl pl-8 text-left">
-        <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">Vulkanizacija</h3>
-        <p>Uz usluge popravka i obrade felgi, našim klijentima nudimo i 
-          mogućnost vulkanizacije, čime štedite vrijeme i 
-          pojednostavljujete cijeli proces. Ako dolazite kod nas na ravnanje, zavarivanje, plastifikaciju ili 
-          CNC obradu felgi, možete odmah obaviti i montažu, demontažu te balansiranje guma. 
-          Također, nudimo opciju da vaše vozilo ostavite kod nas dok su felge na obradi, čime vam omogućujemo 
-          dodatnu praktičnost i bezbrižnost.</p>
-      </div>
-    </section>
-
-    <section id="keramika" class="bg-slate-600 scroll-mt-28 text-white py-12 px-4 sm:px-6 md:px-10 lg:px-16">
-      <div class="max-w-3xl ml-auto text-left pr-8">
-        <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">Keramički zaštitni premaz</h3>
-        <p>Uz standardne usluge popravka i obnavljanja felgi, nudimo i keramički zaštitni premaz kao dodatnu uslugu.
-          Ovaj premaz stvara izdržljiv zaštitni sloj koji: štiti felge od prljavštine, soli, kočione prašine i vremenskih uvjeta,
-          olakšava čišćenje i održavanje, pruža sjajni, glatki finiš koji traje tjednima. Preporučuje se svima koji žele dodatno očuvati izgled i produžiti vijek trajanja svojih felgi.
-        </p>
-      </div>
-    </section>
-
-    <!-- O nama sekcija -->
-    <section id="onama" class="bg-gray-100 scroll-mt-28 py-12 px-4 sm:px-6 md:px-10 lg:px-16">
-      <div class="max-w-3xl mx-auto text-center">
-        <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">O nama</h3>
-        <p class="text-gray-700 leading-relaxed mb-6">
-          AluRepair je specijalizirana radionica za obradu aluminijskih felgi. 
-          Uz to, omogućujemo i uslugu vulkanizacije kako bi cijeli proces bio brz, praktičan i obavljen na jednom mjestu.  
-          Osim felgi, nudimo i plastificiranje te pjeskarenje dijelova automobila poput amortizera, opruga, mostova i sličnih metalnih komponenti.   
-          Također, omogućujemo sigurno sezonsko skladištenje vaših guma i kotača, čime dodatno štedite prostor i vrijeme.
-        </p>
-        <p class="text-gray-700 leading-relaxed mb-6">
-          Tijekom obrade felgi, nudimo opciju da vaše vozilo ostavite kod nas, gdje će biti smješteno do završetka obrade. 
-          Također, dostupna je usluga preuzimanja i povrata felgi na vašoj adresi (Zagreb i okolica), 
-          kao i mogućnost slanja felgi putem naše dostavne službe uz nadoplatu. U tom slučaju potrebno je felge
-          zapakirati u zasebne kutije, koje će se nakon obrade koristiti za njihov povrat.
-        </p> 
-        <p class="text-gray-700 leading-relaxed mb-6">
-          Standardni rok obrade četiri felge iznosi od 24 do 48 sati, ovisno o vrsti i opsegu zahvata. 
-          Ako vam je potrebna brža usluga, nudimo i prioritetnu obradu uz nadoplatu, kojom se postupak završava u roku od najviše 12 sati.
-        </p>
-        <p class="text-gray-700 leading-relaxed mb-6">
-          Sve cijene naših usluga dostupne su na upit, jer ovise o vrsti i stanju felgi te opsegu potrebnih radova. 
-          Za bržu procjenu, slobodno nam pošaljite fotografije felgi putem 
-          <a href="https://wa.me/385981921561" target="_blank" class="text-green-600 hover:text-green-800 underline">WhatsAppa</a> 
-          ili 
-          <a href="mailto:alurepair1@gmail.com" class="text-red-600 hover:text-red-800 underline">alurepair1@gmail.com</a>
-          , a za dodatne informacije možete nas i direktno nazvati na broj 
-          <a href="tel:+385981921561" class="text-blue-600 hover:text-blue-800 underline">+385 98 192 1561</a>. 
-          Rado ćemo odgovoriti na sva vaša pitanja i predložiti najbolje rješenje za vaše potrebe.
-        </p>
-      </div>
-    </section>
-
-
-  <div class="flex justify-center space-x-6 mb-6">
-    <a href="https://www.facebook.com/1JacvyczZj/?mibextid=wwXIfr" target="_blank" class="text-gray-600 hover:text-blue-600 text-4xl"> 
-      <i class="fab fa-facebook"></i>
-    </a>
-    <a href="https://www.instagram.com/popravak_felgi_alurepair?igsh=MWY2bzNmaTd0eTVpMA==" target="_blank" class="text-gray-600 hover:text-pink-500 text-4xl">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://www.tiktok.com/@alurepair1?_r=1&_t=ZN-91xnLVbacxa" target="_blank" class="text-gray-600 hover:text-black text-4xl">
-      <i class="fab fa-tiktok"></i>
-    </a>
-  </div>
-
-    <!-- Kontakt forma -->
-    <section id="kontakt" class="bg-gray-100 scroll-mt-28 py-12 px-4 sm:px-6 md:px-10 lg:px-16"> 
-      <div class="max-w-md mx-auto">
-        <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-center mb-4">Kontaktirajte nas</h3>
-        <form id="kontakt-form" class="space-y-4">
-          <input type="text" name="ime" placeholder="Ime i prezime" class="w-full border rounded px-4 py-2" required>
-          <input type="email" name="email" placeholder="Email" class="w-full border rounded px-4 py-2" required>
-          <input type="tel" name="telefon" placeholder="Broj mobitela" class="w-full border rounded px-4 py-2" required>
-          <textarea name="poruka" rows="4" placeholder="Poruka" class="w-full border rounded px-4 py-2" required></textarea>
-          <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Pošaljite</button>
-      </form>
-      </div>
-    </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="mt-8 text-center py-4 bg-gray-100 text-sm bg-white">
-    &copy; AluRepair 
-
-  </footer>
-
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    // Toggle meni klikom na gumb
-    menuBtn.addEventListener('click', (e) => {
-      e.stopPropagation(); // da klik ne prođe dalje
-      mobileMenu.classList.toggle('hidden');
-    });
-
-    // Zatvori meni ako klikneš izvan njega
-    document.addEventListener('click', (e) => {
-      const isClickInsideMenu = mobileMenu.contains(e.target);
-      const isClickOnButton = menuBtn.contains(e.target);
-
-      if (!isClickInsideMenu && !isClickOnButton) {
-        mobileMenu.classList.add('hidden');
-      }
-    });
-
-    // Zatvori meni kad klikneš na bilo koji link unutar njega
-    document.querySelectorAll('#mobile-menu a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-      });
-    });
-  </script>
-
-    <!-- Scroll-to-top gumb -->
-  <button id="scrollTopBtn" 
-    class="fixed bottom-6 right-6 bg-blue-600 text-white 
-          text-sm sm:text-base md:text-lg 
-          px-3 py-2 sm:px-4 sm:py-2 
-          rounded-full shadow-lg 
-          hover:bg-blue-700 transition hidden z-50">
+  <!-- Scroll-to-top -->
+  <button id="scrollTopBtn"
+    class="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 bg-white/15 hover:bg-white/20 text-white text-sm sm:text-base px-4 py-2 rounded-full shadow-lg transition hidden z-50 border border-white/10">
     <span class="mr-1">Početak</span><span class="text-base sm:text-lg">↑</span>
   </button>
+
   <script>
+    // Scroll-to-top
     const scrollBtn = document.getElementById('scrollTopBtn');
-
-    // Pokaži gumb kad se scrolla 300px dolje
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
-        scrollBtn.classList.remove('hidden');
-      } else {
-        scrollBtn.classList.add('hidden');
-      }
+      if (window.scrollY > 300) scrollBtn.classList.remove('hidden');
+      else scrollBtn.classList.add('hidden');
     });
-
-    // Scroll na vrh kad se klikne
     scrollBtn.addEventListener('click', () => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   </script>
 
   <script>
-  document.getElementById('kontakt-form').addEventListener('submit', async function (e) {
-    e.preventDefault(); // spriječi refresh
+    // Formspree submit
+    document.getElementById('kontakt-form')?.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const form = e.target;
+      const formData = new FormData(form);
 
-    const form = e.target;
-    const formData = new FormData(form);
+      try {
+        const response = await fetch('https://formspree.io/f/xanrjyvq', {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: formData
+        });
 
-    try {
-      const response = await fetch('https://formspree.io/f/xanrjyvq', { // <-- stavi svoj endpoint ovdje
-        method: 'POST',
-        headers: { 'Accept': 'application/json' },
-        body: formData
+        if (response.ok) {
+          alert('Poruka je uspješno poslana!');
+          form.reset();
+        } else {
+          alert('Došlo je do pogreške. Pokušajte kasnije.');
+        }
+      } catch (err) {
+        alert('Greška pri slanju. Pokušajte ponovno.');
+      }
+    });
+  </script>
+
+  <script>
+    // Mobile menu
+    (function () {
+      const btn = document.getElementById('menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      if (!btn || !menu) return;
+
+      const close = () => {
+        menu.classList.add('hidden');
+        btn.setAttribute('aria-expanded', 'false');
+      };
+
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = !menu.classList.contains('hidden');
+        if (isOpen) close();
+        else {
+          menu.classList.remove('hidden');
+          btn.setAttribute('aria-expanded', 'true');
+        }
       });
 
-      if (response.ok) {
-        alert('Poruka je uspješno poslana!');
-        form.reset();
-      } else {
-        alert('Došlo je do pogreške. Pokušajte kasnije.');
+      // close on outside click
+      document.addEventListener('click', (e) => {
+        if (menu.classList.contains('hidden')) return;
+        const inside = menu.contains(e.target) || btn.contains(e.target);
+        if (!inside) close();
+      });
+
+      // close when clicking a link
+      menu.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+    })();
+  </script>
+
+  <script>
+    // Accordion (otvorena samo jedna)
+    (function () {
+      const buttons = document.querySelectorAll('.accordion-btn');
+
+      function closeAll(exceptId = null) {
+        document.querySelectorAll('.accordion-content').forEach(content => {
+          if (content.id !== exceptId) content.classList.add('hidden');
+        });
+
+        buttons.forEach(btn => {
+          const targetId = btn.dataset.target;
+          if (targetId !== exceptId) {
+            btn.setAttribute('aria-expanded', 'false');
+            const arrow = btn.querySelector('.accordion-arrow');
+            if (arrow) arrow.style.transform = 'rotate(0deg)';
+          }
+        });
       }
-    } catch (err) {
-      alert('Greška pri slanju. Pokušajte ponovno.');
-    }
-  });
-</script>
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetId = btn.dataset.target;
+          const content = document.getElementById(targetId);
+          if (!content) return;
+
+          const isOpen = !content.classList.contains('hidden');
+
+          if (isOpen) {
+            content.classList.add('hidden');
+            btn.setAttribute('aria-expanded', 'false');
+            const arrow = btn.querySelector('.accordion-arrow');
+            if (arrow) arrow.style.transform = 'rotate(0deg)';
+          } else {
+            closeAll(targetId);
+            content.classList.remove('hidden');
+            btn.setAttribute('aria-expanded', 'true');
+            const arrow = btn.querySelector('.accordion-arrow');
+            if (arrow) arrow.style.transform = 'rotate(180deg)';
+
+            setTimeout(() => {
+              btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 80);
+          }
+        });
+      });
+
+      // hero linkovi (i mobile menu linkovi) otvaraju accordion
+      document.querySelectorAll('[data-open]').forEach(link => {
+        link.addEventListener('click', (e) => {
+          const id = link.getAttribute('data-open');
+          const btn = document.querySelector(`.accordion-btn[data-target="${id}"]`);
+          if (!btn) return;
+
+          e.preventDefault();
+
+          // zatvori mobile menu ako je otvoren
+          const m = document.getElementById('mobile-menu');
+          const b = document.getElementById('menu-btn');
+          if (m && b && !m.classList.contains('hidden')) {
+            m.classList.add('hidden');
+            b.setAttribute('aria-expanded', 'false');
+          }
+
+          btn.click();
+        });
+      });
+    })();
+  </script>
+
+  <script>
+    // Video rotator (radi samo kad je "Popravak" otvoren)
+    (function () {
+      const vid1 = document.getElementById('vid1');
+      const vid2 = document.getElementById('vid2');
+      const pop = document.getElementById('acc-pop');
+      if (!vid1 || !vid2 || !pop) return;
+
+      const SWITCH_MS = 5000;
+      let showingFirst = true;
+
+      Promise.resolve().then(() => vid1.play().catch(() => { }));
+      Promise.resolve().then(() => vid2.play().catch(() => { }));
+
+      setInterval(() => {
+        const popOpen = !pop.classList.contains('hidden');
+        if (!popOpen) return;
+
+        showingFirst = !showingFirst;
+        if (showingFirst) {
+          vid2.classList.add('hidden');
+          vid1.classList.remove('hidden');
+          vid1.currentTime = 0;
+          vid1.play().catch(() => { });
+        } else {
+          vid1.classList.add('hidden');
+          vid2.classList.remove('hidden');
+          vid2.currentTime = 0;
+          vid2.play().catch(() => { });
+        }
+      }, SWITCH_MS);
+    })();
+  </script>
+
 </body>
+
 </html>
